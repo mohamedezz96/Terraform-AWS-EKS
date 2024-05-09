@@ -12,7 +12,6 @@ module "eks-network" {
     us-east-1b = "10.0.128.0/19"
     us-east-1c = "10.0.160.0/19"
   }
-
 }
 
 
