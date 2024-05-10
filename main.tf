@@ -14,4 +14,11 @@ module "eks-network" {
   }
 }
 
+module "eks-cluster" {
+  source = "github.com/mohamedezz96/Terraform-Modules/EKS/EKS-Cluster"
+  cluster_name = "Testing"
+  cluster_version = "1.29"
+  subnets_ids = module.eks-network.eks_vpc_subnet_ids.values
+}
+
 
