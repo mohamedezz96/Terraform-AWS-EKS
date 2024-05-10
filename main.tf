@@ -1,5 +1,5 @@
 module "eks-network" {
-  source          = "github.com/mohamedezz96/Terraform-Modules/EKS/Network"
+  source          = "github.com/mohamedezz96/Terraform-Modules/EKS/EKS-Network"
   vpc_cidr_block  = "10.0.0.0/16"
   private_subnets_cidr_block = {
     us-east-1a = "10.0.0.0/19"
