@@ -38,3 +38,7 @@ module "eks-node-group" {
   node_group_max_unavailable = 1
 }
 
+module "eks-addons" {
+  source = "github.com/mohamedezz96/Terraform-Modules/EKS/EKS-Addons"
+  cluster_name = module.eks-cluster.cluster_name
+}
