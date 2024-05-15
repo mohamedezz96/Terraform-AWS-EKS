@@ -6,7 +6,9 @@ This repository contains Terraform scripts to deploy an Amazon EKS (Elastic Kube
 
 Before you begin, ensure you have the following installed:
 
-
+- Terraform installed on your local machine.
+- AWS credentials configured with the necessary permissions to manage EKS resources.
+- kubectl tools is installed on your local machine.
 
 ## Getting Started
 
@@ -21,7 +23,7 @@ Before you begin, ensure you have the following installed:
     ```bash
     cd Terraform-AWS-EKS
     ```
-
+     
 3. Initialize Terraform:
 
     ```bash
@@ -29,22 +31,22 @@ Before you begin, ensure you have the following installed:
     ```
 
 
-4. Review and customize the `main.tf` file to adjust your AWS resources' configurations according to your requirements.
+4. Review and customize the `main.tf` & `terraform.tf` files to adjust your AWS resources' configurations according to your requirements.
 
 
-7. Plan your Terraform deployment:
+5. Plan your Terraform deployment:
 
     ```bash
     terraform plan
     ```
 
-8. Deploy your EKS cluster:
+6. Deploy your EKS cluster:
 
     ```bash
     terraform apply
     ```
 
-9. After the deployment is complete, configure `kubectl` to communicate with your EKS cluster:
+7. After the deployment is complete, configure `kubectl` to communicate with your EKS cluster:
 
     ```bash
     aws eks --region <region> update-kubeconfig --name <cluster-name>
@@ -56,3 +58,4 @@ To clean up and destroy the resources created by Terraform, run:
 
 ```bash
 terraform destroy
+```
