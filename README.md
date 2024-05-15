@@ -8,7 +8,7 @@ Before you begin, ensure you have the following installed:
 
 - Terraform installed on your local machine.
 - AWS credentials configured with the necessary permissions to manage EKS resources.
-- kubectl tools is installed on your local machine.
+- kubectl tool is installed on your local machine.
 
 ## Getting Started
 
